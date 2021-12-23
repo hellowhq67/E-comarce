@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+.main-conteiner{
+ height: 100vh;
+ width: 100%;
+   padding:50px;
+}
+#about{
+    background:  linear-gradient(145deg, #1e2024, #23272b);
+    color: white;
+    height: 100vh
+   
+}
+.photo{
+
+   
+    width: 410px;
+    height: 550px;
+    background: #212428;
+    box-shadow: 10px 10px 19px #1c1e22,
+    -10px -10px 19px #262a2e;
+    border-radius:10px;
+}
+.photo:hover{
+    transform: translateY(-5px);
+}
+.main-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    box-shadow:   1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 2s ease-out;
+}
+
+.main-image img{
+    width: 370px;
+    height: 510px;
+    border-radius: 8px;
+}
+.fixed-text{
+    padding: 10px;
+    border-radius: 6px;
+    background:#212428;
+    width: 45px;
+   box-shadow:   1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset ;
+    position: fixed;
+    right: 0;
+}
+.fixed-text div{
+    text-align: center
+}
+.flex-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.mian-text{
+   width: 39vw;
+    margin-top: 5rem;
+    margin-left: 10rem
+}
+.mian-text h3{
+    font-size: 14px;
+    color:  #ff014f;
+    font-family: 'Red Hat Display';
+}
+.mian-text  h1{
+    font-weight:bold;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: 'Red Hat Display';
+    color:  #f4f5f6;
+}
+.about-btn{
+    background: #212428;
+    box-shadow: 10px 10px 19px #1c1e22,
+    -10px -10px 19px #262a2e;
+    border: none;
+    color: #ff014f;
+    padding: 13px 40px;
+    border-radius: 10px;
+}
+.about-btn:hover{
+    transform:translateY(-5px);
+    box-shadow:   inset 21px 21px 19px #181a1d, inset -21px -21px 19px #202225;
+
+}
+@media only screen and (max-width: 750px){
+   
+    .photo{
+        height: 155px;
+        width: 110px;
+    }
+    .main-image img{
+        width: 80px;
+        height: 120px;
+    }
+    .mian-text{
+        width: 100%;
+        margin: 10px auto;
+        text-align: center;
+        
+    }
+    .main-conteiner{
+        height: 100%;
+    }
+   
+}

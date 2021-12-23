@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid-conteiner{
+    background: #162447;
+    display: grid;
+    grid-template-columns:70% 30%;
+    height: 100%;
+}
+.grid-col-1 .blog-info{
+    width: 50%;
+}
+.grid-col-1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.grid-col-5{
+    grid-column-start: 4;
+    grid-column-end: 2;
+    
+}
+.grid-item{
+    display: grid;
+    grid-template-columns:  auto auto auto ;
+    grid-template-rows: auto 420px auto auto  ;
+    grid-gap: 10px;
+    padding: 20px;
+}
+.card{
+    background:rgba(0, 0, 0, 0.322);
+    color: white;
+    overflow: hidden;
+    transition: 0.3s;
+
+}
+.card:hover{
+    transform: translateY(-9px);
+}
+.grid-card-text{
+    padding: 5px;
+    text-align: center;
+    font-size: 13px;
+}
+.blog-info{
+    background:#005792;
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    margin-bottom:10px;
+    border-radius: 20px;
+}
+.blog-info i{
+    color: white;
+}
+
+.Side-content{
+   margin:120px 20px;
+}
+.poster-item{
+    background: url(./image/img/banner/2.jpg);
+    background-position: top center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    
+
+}
+.text-box  {
+    color: black;
+    font-size: 2.4rem;
+    text-align: center;
+    position: relative;
+   right: 20%;
+    bottom: -50%;
+}
+.ud{
+    background: red;
+    width: 20%;
+    height: 2px;
+    margin: auto;
+}
+@media only screen and (max-width: 750px){
+    .grid-item{
+        display: grid;
+        grid-template-columns:220px;
+        grid-template-rows: 320px 320px  320px  320px  320px ;
+        grid-gap: 20px;
+        
+        
+    }
+    .card{
+        grid-column:1/span3;
+        
+    }
+    .titel{
+        font-size: 10px;
+        
+        
+    }
+    .blog-info{
+      
+        font-size: 10px;
+        width: 100%;
+    }
+
+    .grid-col-1 .blog-info{
+        width: 100%;
+    }
+    
+    .Side-content{
+       margin:5px;
+       position: relative;
+        top: 20%;
+        bottom: 50%;
+        transform:translate(-50% -50%);
+        
+}
+     .poster-item{
+        background-image: url(./image/img/banner/2.jpg);
+        background-position: 20px left  center;
+        height: 30vh;
+        width:100%;
+}
+@media (min-width:300px)and (max-width: 1050px){
+
+}
